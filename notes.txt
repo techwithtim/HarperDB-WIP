@@ -1,0 +1,3 @@
+npm create vite@latest code-racer -- --template react
+disable cors by adding proxy
+npm i @monaco-editor/react

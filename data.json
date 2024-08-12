@@ -1,0 +1,4 @@
+{
+    "language": "JavaScript",
+    "text": "const hello = 'world'\nconsole.log(hello)"
+}
