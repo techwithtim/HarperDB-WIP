@@ -1,4 +1,3 @@
-// src/hooks/useTimer.js
 import { useState, useEffect, useRef } from 'react';
 
 const useTimer = (userInput) => {
@@ -18,14 +17,13 @@ const useTimer = (userInput) => {
     const interval = setInterval(() => {
       const currentTime = Date.now();
       setElapsedTime((currentTime - start) / 1000); // in seconds
-    }, 100);
+    }, 10);
     timerRef.current = interval;
   };
 
   const stopTimer = () => {
     clearInterval(timerRef.current);
     timerRef.current = null;
-    calcCpm();
     setComplete(true);
   };
 

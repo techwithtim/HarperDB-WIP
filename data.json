@@ -1,4 +1,4 @@
 {
-    "language": "JavaScript",
-    "text": "const hello = 'world'\nconsole.log(hello)"
+    "language": "python",
+    "text": "lst = [i for i in range(10)]\nnew_lst = map(lambda x: x**2, lst)"
 }

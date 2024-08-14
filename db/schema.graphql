@@ -11,4 +11,5 @@ type Score @table @export {
     snippetId: ID @indexed
     snippet: Snippet @relationship(from: "snippetId")
     cpm: Float!
+    region: String
 }

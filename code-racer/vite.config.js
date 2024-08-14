@@ -5,15 +5,5 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   server: {
-    proxy: {
-      '/Snippet': {
-        target: 'http://localhost:9926',
-        changeOrigin: true,
-      },
-      '/Score': {
-        target: 'http://localhost:9926',
-        changeOrigin: true,
-      },
-    }
   }
 })

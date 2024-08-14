@@ -1,22 +1,9 @@
-/** Here we can define any JavaScript-based resources and extensions to tables
-
-export class MyCustomResource extends tables.TableName {
-	// we can define our own custom POST handler
+export class Scores extends tables.Score {
+	
 	post(content) {
-		// do something with the incoming content;
+		content.region = server.config.clustering.nodeName
+		console.log(content, server.config.clustering)
 		return super.post(content);
 	}
-	// or custom GET handler
-	get() {
-		// we can modify this resource before returning
-		return super.get();
-	}
 }
- */
-// we can also define a custom resource without a specific table
-export class Greeting extends Resource {
-	// a "Hello, world!" handler
-	get() {
-		return { greeting: 'Hello, world!' };
-	}
-}
+ 
